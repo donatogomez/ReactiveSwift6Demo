@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct MessageListView: View {
-    @State var viewModel = MessageViewModel()
+    let viewModel = MessageViewModel()
 
     var body: some View {
         List(viewModel.messages) { message in
